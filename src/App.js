@@ -13,14 +13,20 @@ function App() {
       {/* <Welcome /> */}
       {/* <Hello /> */}
 
-      <Greet name="Harsh" heroName="Hanuman">
+      {/* <Greet name="Harsh" heroName="Hanuman">
         <p>This is Children Props</p>
       </Greet>
 
       <Greet name="Swayam" heroName="Batman">
         <button>Click Me</button>
       </Greet>
-      <Greet name="Shivaay" heroName="Superman" />
+      <Greet name="Shivaay" heroName="Superman" /> */}
+
+      <Welcome name="Harsh" heroName="Hanuman">
+        <button>hit Me!!</button>
+        </Welcome>
+      <Welcome name="Swayam" heroName="Batman"/>
+      <Welcome name="Shivaay" heroName="Superman"/>
 
     </div>
   );
