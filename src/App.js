@@ -11,7 +11,12 @@ function App() {
       {/* <Mycomponent /> */}
       {/* <Greet /> */}
       {/* <Welcome /> */}
-      <Hello />
+      {/* <Hello /> */}
+
+      <Greet name="Harsh" heroName="Hanuman"/>
+      <Greet name="Swayam" heroName="Batman"/>
+      <Greet name="Shivaay" heroName="Superman"/>
+
     </div>
   );
 }
