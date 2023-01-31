@@ -7,7 +7,7 @@ const Hello = () => {
     //     </div>
     // )
 
-    return React.createElement('div',null,"<h1>Hello Harsh</h1>"); 
+    return React.createElement('div',null,"h1","Hello Harsh"); 
 
 }
 
