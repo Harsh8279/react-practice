@@ -3,6 +3,7 @@ import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
 // import Mycomponent from './components/Greet';
 
 function App() {
@@ -21,12 +22,14 @@ function App() {
         <button>Click Me</button>
       </Greet>
       <Greet name="Shivaay" heroName="Superman" /> */}
-
+{/* 
       <Welcome name="Harsh" heroName="Hanuman">
         <button>hit Me!!</button>
         </Welcome>
       <Welcome name="Swayam" heroName="Batman"/>
-      <Welcome name="Shivaay" heroName="Superman"/>
+      <Welcome name="Shivaay" heroName="Superman"/> */}
+
+      <Message/>
 
     </div>
   );
