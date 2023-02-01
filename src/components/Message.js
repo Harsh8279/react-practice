@@ -6,23 +6,35 @@ class Message extends Component {
         super();
 
         this.state = {
-            message: "Welcome Visitor!"
+            message: "Welcome Visitor!",
+            button: "Subscribe"
         }
     }
 
-    changeMessage(){
+    changeMessage() {
 
-        this.setState({
-            message :"Thnk you for subscribing :)"
-        })
-        
+        if (this.state.button === "Subscribe") {
+            this.setState({
+                message: "Thank you for subscribing!!",
+                button: "Unsubscribe"
+            })
+        }
+        else if (this.state.button === "Unsubscribe") {
+            this.setState({
+                message: "Welcome Visitor!",
+                button: "Subscribe"
+            })
+        }
+
+
     }
 
     render() {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={()=>this.changeMessage()}> Subscribe </button>
+                <button onClick={() => this.changeMessage()}>{this.state.button}</button>
+
             </div>
         );
     }
