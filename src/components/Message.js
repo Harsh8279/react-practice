@@ -6,6 +6,7 @@ class Message extends Component {
         return (
             <div>
                 <h1>Welcome Visitor!!</h1>
+                <button> Subscribe </button>
             </div>
         );
     }
