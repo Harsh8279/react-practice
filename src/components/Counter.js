@@ -13,8 +13,8 @@ class Counter extends Component {
     countHandler(){
         this.setState({
             count:this.state.count+1
-        })
-        console.log(this.state.count)
+        },()=>{console.log(this.state.count)})   // added  here for getting incremental count appropriately
+        
     }
 
     render() {
