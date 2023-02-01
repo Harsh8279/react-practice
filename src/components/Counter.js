@@ -11,18 +11,28 @@ class Counter extends Component {
     }
 
     countHandler() {
+        // passing object as an argument for setstate
         this.setState({
             count: this.state.count + 1
         }, () => { console.log(this.state.count) })   // added  here for getting incremental count appropriately
 
     }
 
+    increment(){
+        // passing function as an argument
+        this.setState((prvState)=>({
+            count:prvState.count + 1,
+        }),console.log("Callback Count ",this.state.count))
+
+        console.log("Count ",this.state.count)
+    }
+
     incrementFive(){
-        this.countHandler();
-        this.countHandler();
-        this.countHandler();
-        this.countHandler();
-        this.countHandler();
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
+        this.increment();
     }
 
     render() {
