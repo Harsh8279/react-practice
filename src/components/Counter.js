@@ -10,11 +10,19 @@ class Counter extends Component {
         }
     }
 
-    countHandler(){
+    countHandler() {
         this.setState({
-            count:this.state.count+1
-        },()=>{console.log(this.state.count)})   // added  here for getting incremental count appropriately
-        
+            count: this.state.count + 1
+        }, () => { console.log(this.state.count) })   // added  here for getting incremental count appropriately
+
+    }
+
+    incrementFive(){
+        this.countHandler();
+        this.countHandler();
+        this.countHandler();
+        this.countHandler();
+        this.countHandler();
     }
 
     render() {
@@ -23,7 +31,7 @@ class Counter extends Component {
                 count : {this.state.count}
                 <br></br>
                 <br></br>
-                <button onClick={() => this.countHandler()}>Increment</button>
+                <button onClick={() => this.incrementFive()}>Increment</button>
             </div>
         )
     }
