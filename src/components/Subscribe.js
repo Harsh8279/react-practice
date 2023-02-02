@@ -10,7 +10,11 @@ export class Subscribe extends Component {
     }
 
     clickHandler(){
-        console.log(this);      
+        console.log(this);      // undefined
+        // here this keyword has no value still clickHandler is class method
+        // to solve this we have two ways 
+        // 1. bind method 
+        // 2. use arrowfunction
         this.setState(
         {message:"Thank you bruh!!"}
         )
