@@ -8,14 +8,15 @@ export class Subscribe extends Component {
             message: "Welcome Bruh!!"
         }
 
-        // this.clickHandler = this.clickHandler.bind(this);   // 1st way
+        this.clickHandler = this.clickHandler.bind(this);   // 1st way
+        // best and professional approach
     }
 
     clickHandler (){  
         console.log(this);      // now this has value because we defined Handler with the use of  arrow function
         // here this keyword has no value still clickHandler is class method
         // to solve this we have two ways 
-        // 1. bind method 
+        // 1. bind method               // best and professional approach
         // 2. use arrowfunction
         // 3. bind this in render method
         // 4. use arrow function in render method
@@ -28,7 +29,7 @@ export class Subscribe extends Component {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={() => {this.clickHandler()}}>Subscribe</button>   {/* 4th way */}
+                <button onClick={this.clickHandler}>Subscribe</button>   {/* 4th way */}
             </div>
         )
     }
