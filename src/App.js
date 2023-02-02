@@ -8,6 +8,7 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import Subscribe from './components/Subscribe';
+import ParentComponent from './components/ParentComponent';
 // import Mycomponent from './components/Greet';
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
 
       {/* <ClassClick /> */}
 
-      <Subscribe/>
+      {/* <Subscribe/> */}
+
+      <ParentComponent/>
 
     </div>
   );
