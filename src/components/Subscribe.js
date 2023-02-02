@@ -8,11 +8,11 @@ export class Subscribe extends Component {
             message: "Welcome Bruh!!"
         }
 
-        this.clickHandler = this.clickHandler.bind(this);   // 1st way
+        // this.clickHandler = this.clickHandler.bind(this);   // 1st way
     }
 
-    clickHandler(){
-        console.log(this);      // now this has value because we bind this to method in the constructor
+    clickHandler = ()=>{  
+        console.log(this);      // now this has value because we defined Handler with the use of  arrow function
         // here this keyword has no value still clickHandler is class method
         // to solve this we have two ways 
         // 1. bind method 
