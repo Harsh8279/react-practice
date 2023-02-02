@@ -34,7 +34,8 @@ function App() {
 
       {/* <Counter /> */}
 
-      <Greet name="Harsh" heroName="Hanuman"/>
+      {/* <Greet name="Harsh" heroName="Hanuman"/> */}
+      <Welcome name="Harsh" heroName="Hanuman"/>
 
     </div>
   );
