@@ -5,7 +5,7 @@ export class Welcome extends Component {
   render() {
 
     const {name,heroName} = this.props    // destructuring props in class component but in render method
-    const {state1,state2} = this.state
+    // const {state1,state2} = this.state // for destructuring state in class component
 
     return (
       <div>
