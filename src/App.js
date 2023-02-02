@@ -32,7 +32,9 @@ function App() {
 
       {/* <Message/> */}
 
-      <Counter />
+      {/* <Counter /> */}
+
+      <Greet name="Harsh" heroName="Hanuman"/>
 
     </div>
   );
