@@ -7,10 +7,12 @@ export class Subscribe extends Component {
         this.state = {
             message: "Welcome Bruh!!"
         }
+
+        this.clickHandler = this.clickHandler.bind(this);   // 1st way
     }
 
     clickHandler(){
-        console.log(this);      // undefined
+        console.log(this);      // now this has value because we bind this to method in the constructor
         // here this keyword has no value still clickHandler is class method
         // to solve this we have two ways 
         // 1. bind method 
