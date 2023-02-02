@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
 // import Mycomponent from './components/Greet';
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       {/* <Counter /> */}
 
       {/* <Greet name="Harsh" heroName="Hanuman"/> */}
-      <Welcome name="Harsh" heroName="Hanuman"/>
+      {/* <Welcome name="Harsh" heroName="Hanuman"/> */}
+      <FunctionClick />
 
     </div>
   );
