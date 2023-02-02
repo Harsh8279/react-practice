@@ -7,6 +7,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import Subscribe from './components/Subscribe';
 // import Mycomponent from './components/Greet';
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
       {/* <Welcome name="Harsh" heroName="Hanuman"/> */}
       {/* <FunctionClick /> */}
 
-      <ClassClick />
+      {/* <ClassClick /> */}
+
+      <Subscribe/>
 
     </div>
   );
