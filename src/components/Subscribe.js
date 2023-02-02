@@ -18,6 +18,7 @@ export class Subscribe extends Component {
         // 1. bind method 
         // 2. use arrowfunction
         // 3. bind this in render method
+        // 4. use arrow function in render method
         this.setState(
         {message:"Thank you bruh!!"}
         )
@@ -27,7 +28,7 @@ export class Subscribe extends Component {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={this.clickHandler.bind(this)}>Subscribe</button>   // 3rd way
+                <button onClick={() => {this.clickHandler()}}>Subscribe</button>   {/* 4th way */}
             </div>
         )
     }
