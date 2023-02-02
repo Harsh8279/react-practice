@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
 
 export class ChildComponent extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         
+      }
+    }
+    
   render() {
     return (
       <div>
-        <button>Greet Parent</button>
+        <button onClick={this.props.greetHandler}>Greet Parent</button>
       </div>
     )
   }
