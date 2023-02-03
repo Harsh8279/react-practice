@@ -6,21 +6,17 @@ export class UserGreeting extends Component {
         super(props)
 
         this.state = {
-            isLoggedIn: false
+            isLoggedIn: true
         }
     }
 
 
     render() {
 
-        // ternary operators we can use inside the JSX
+       // whenever you want to return something or nothing 
+       // then you can use short-circuit method
 
-        return(
-            this.state.isLoggedIn ? 
-            <div>Hello Harsh</div>:
-            <div>Hello Guest</div>
-        )
-
+       return this.state.isLoggedIn && <div>Hello Harsh</div>
         
     }
 }
