@@ -24,9 +24,11 @@ function NameList() {
     ]
 
     const nameList = persons.map(person => 
-        <Person person={person} />
+        <Person key={person.id} person={person} />
         )
-
+        // key props should be unique within the list
+        // and must include while creating list of elements
+        // key props are not accessible in child components
     return <div>{nameList}</div>
 }
 
