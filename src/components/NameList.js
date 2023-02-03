@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person'
 
 function NameList() {
     const persons = [
@@ -22,7 +23,9 @@ function NameList() {
         },
     ]
 
-    const nameList = persons.map(person => <h2>I am {person.name}. I am {person.age} years old. I am skilled in {person.skill}</h2>)
+    const nameList = persons.map(person => 
+        <Person person={person} />
+        )
 
     return <div>{nameList}</div>
 }
