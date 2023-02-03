@@ -10,6 +10,7 @@ import ClassClick from './components/ClassClick';
 import Subscribe from './components/Subscribe';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 // import Mycomponent from './components/Greet';
 
 function App() {
@@ -48,7 +49,9 @@ function App() {
       {/* <Subscribe/> */}
 
       {/* <ParentComponent/> */}
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
+
+      <NameList/>
 
     </div>
   );
